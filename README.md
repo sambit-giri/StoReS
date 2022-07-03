@@ -84,7 +84,7 @@ plt.show()
 
 ```
 
-<img src="images/LB1_z6p905.png" width="400">
+<img src="images/LB1_z6p905.png" width="600">
 
 
 ## CONTRIBUTING
