@@ -1,0 +1,8 @@
+numpy
+scipy
+matplotlib
+astropy
+scikit-learn
+tools21cm
+cython
+wget

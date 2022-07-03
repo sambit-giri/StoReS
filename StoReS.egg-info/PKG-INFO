@@ -1,0 +1,97 @@
+Metadata-Version: 2.1
+Name: StoReS
+Version: 0.1
+Summary: Retrieving simulations of reionization and cosmic dawn.
+Home-page: https://github.com/sambit-giri/StoReS.git
+Author: Sambit Giri
+Author-email: sambit.giri@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# StoReS
+
+Storage of Reionization Simulations
+
+## Package details
+
+The package provides methods for retrieving simulations of reionization and cosmic dawn.
+
+## INSTALLATION
+
+One can install a stable version of this package using pip by running the following command::
+
+    pip install StoReS
+
+In order to use the latest version, one can clone this package running the following::
+
+    git clone https://github.com/sambit-giri/StoReS.git
+
+To install the package in the standard location, run the following in the root directory::
+
+    python setup.py install
+
+In order to install it in a separate directory::
+
+    python setup.py install --home=directory
+
+One can also install it using pip by running the following command::
+
+    pip install git+https://github.com/sambit-giri/StoReS.git
+
+The dependencies should be installed automatically during the installation process. If they fail for some reason, you can install them manually before installing StoReS. The list of required packages can be found in the requirements.txt file present in the root directory.
+
+### Tests
+
+For testing, one can use [pytest](https://docs.pytest.org/en/stable/) or [nosetests](https://nose.readthedocs.io/en/latest/). Both packages can be installed using pip. To run all the test script, run the either of the following::
+
+    python -m pytest tests
+    
+	nosetests -v
+
+## USAGE
+
+Script to get C2Ray reionization simulations.
+
+```python
+import numpy as np 
+import matplotlib.pyplot as plt
+import BCemu
+
+bfcemu = BCemu.BCM_7param(Ob=0.05, Om=0.27)
+bcmdict = {'log10Mc': 13.32,
+           'mu'     : 0.93,
+           'thej'   : 4.235,  
+           'gamma'  : 2.25,
+           'delta'  : 6.40,
+           'eta'    : 0.15,
+           'deta'   : 0.14,
+           }
+
+z = 0
+k_eval = 10**np.linspace(-1,1.08,50)
+p_eval = bfcemu.get_boost(z, bcmdict, k_eval)
+
+plt.semilogx(k_eval, p_eval, c='C0', lw=3)
+plt.axis([1e-1,12,0.73,1.04])
+plt.yticks(fontsize=14)
+plt.xticks(fontsize=14)
+plt.xlabel(r'$k$ (h/Mpc)', fontsize=14)
+plt.ylabel(r'$\frac{P_{\rm DM+baryon}}{P_{\rm DM}}$', fontsize=21)
+plt.tight_layout()
+plt.show()
+
+```
+
+<img src="images/Sk_z0_7param.png" width="400">
+
+
+## CONTRIBUTING
+
+If you find any bugs or unexpected behavior in the code, please feel free to open a [Github issue](https://github.com/sambit-giri/StoReS/issues). The issue page is also good if you seek help or have suggestions for us. 
+
+## References
+
+
+

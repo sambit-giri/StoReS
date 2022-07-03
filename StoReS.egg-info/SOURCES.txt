@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+StoReS.egg-info/PKG-INFO
+StoReS.egg-info/SOURCES.txt
+StoReS.egg-info/dependency_links.txt
+StoReS.egg-info/not-zip-safe
+StoReS.egg-info/requires.txt
+StoReS.egg-info/top_level.txt
+src/__init__.py
+src/download.py
+src/functions.py
+src/simulations.py
