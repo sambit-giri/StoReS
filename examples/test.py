@@ -29,21 +29,21 @@ dn = data['dens']
 
 print(dn.shape, xf.shape)
 
-fig, axs = plt.subplots(1,2,figsize=(13,6))
-axs[0].pcolormesh(np.linspace(0,box_len,dn.shape[0]+1), 
-				  np.linspace(0,box_len,dn.shape[1]+1), 
-				  dn[:,:,0],
-				  cmap='jet')
-axs[0].set_xlabel('[Mpc]', fontsize=13)
-axs[0].set_ylabel('[Mpc]', fontsize=13)
-axs[1].pcolormesh(np.linspace(0,box_len,xf.shape[0]+1), 
-				  np.linspace(0,box_len,xf.shape[1]+1), 
-				  xf[:,:,0],
-				  cmap='jet')
-axs[1].set_xlabel('[Mpc]', fontsize=13)
-axs[1].set_ylabel('[Mpc]', fontsize=13)
-plt.tight_layout()
-plt.show()
+# fig, axs = plt.subplots(1,2,figsize=(13,6))
+# axs[0].pcolormesh(np.linspace(0,box_len,dn.shape[0]+1), 
+# 				  np.linspace(0,box_len,dn.shape[1]+1), 
+# 				  dn[:,:,0],
+# 				  cmap='jet')
+# axs[0].set_xlabel('[Mpc]', fontsize=13)
+# axs[0].set_ylabel('[Mpc]', fontsize=13)
+# axs[1].pcolormesh(np.linspace(0,box_len,xf.shape[0]+1), 
+# 				  np.linspace(0,box_len,xf.shape[1]+1), 
+# 				  xf[:,:,0],
+# 				  cmap='jet')
+# axs[1].set_xlabel('[Mpc]', fontsize=13)
+# axs[1].set_ylabel('[Mpc]', fontsize=13)
+# plt.tight_layout()
+# plt.show()
 
 
 fig, axs = plt.subplots(1,2,figsize=(13,6))

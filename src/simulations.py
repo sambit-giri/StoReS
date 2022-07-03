@@ -58,8 +58,10 @@ class C2RAY:
 			ff1 = download_simulation(self.sim_file_list_dict['xfrac'][az1], self.work_dir, verbose=self.verbose)
 			xf0 = t2c.XfracFile(ff0).xi 
 			xf1 = t2c.XfracFile(ff1).xi 
+			ff  = [ff0,ff1]
 			xf  = xf0 + (xf1-xf0)*(z-zz0)/(zz1-zz0)
 		data['xfrac'] = xf 
+		data['xfrac_filename'] = ff
 
 		if z in self.zs_dict['dens']:
 			az = nearest_element_idx(self.zs_dict['dens'], z, both=False)
@@ -73,8 +75,10 @@ class C2RAY:
 			ff1 = download_simulation(self.sim_file_list_dict['dens'][az1], self.work_dir, verbose=self.verbose)
 			dn0 = t2c.DensityFile(ff0).cgs_density
 			dn1 = t2c.DensityFile(ff1).cgs_density
+			ff  = [ff0,ff1]
 			dn  = dn0 + (dn1-dn0)*(z-zz0)/(zz1-zz0)
 		data['dens'] = dn 
+		data['dens_filename'] = ff
 
 		return data
 
