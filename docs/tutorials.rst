@@ -4,6 +4,6 @@ Simulations
 
 .. toctree::
    :maxdepth: 2
-   :caption: Examples:
+   :caption: 
 
    examples/244Mpc
