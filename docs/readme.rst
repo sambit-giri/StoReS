@@ -1,8 +1,8 @@
-============================================
-StoReS (Storage of Reionization Simulations)
-============================================
+======
+StoReS
+======
 
-A python package for accessing publicly available simulations of the Epoch of Reionization (EoR) and Cosmic Dawn (CD). The source files can be found `here <https://github.com/sambit-giri/StoReS>`_.
+StoReS (Storage of Reionization Simulations) is a python package for accessing publicly available simulations of the Epoch of Reionization (EoR) and Cosmic Dawn (CD). The source files can be found `here <https://github.com/sambit-giri/StoReS>`_.
 
 Note: There are some modules in the package that are still under active development. Therefore please contact the authors if you get erronous results.
 
@@ -35,7 +35,7 @@ Outputs
 * Download the simulation data
 * Read the simulation data
 
-For detail documentation and how to use them, see `here <https://tools21cm.readthedocs.io/contents.html>`_.
+For detail documentation and how to use them, see `here <https://stores.readthedocs.io/en/latest/tutorials.html>`_.
 
 Under Developement
 ------------------
