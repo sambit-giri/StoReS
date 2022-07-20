@@ -5,4 +5,3 @@ astropy
 scikit-learn
 Tools21cm
 cython
-pickle
