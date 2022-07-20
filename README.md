@@ -4,7 +4,7 @@ Storage of Reionization Simulations
 
 ## Package details
 
-The package provides methods for retrieving simulations of reionization and cosmic dawn.
+The package provides methods for retrieving simulations of reionization and cosmic dawn. Full documentation can be found [here](https://stores.readthedocs.io/en/latest/).
 
 ## INSTALLATION
 
