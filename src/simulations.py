@@ -97,38 +97,10 @@ class C2RAY:
 		data = {}
 
 		xf, ff = self.get_ionisation_data_z(z)
-		# if z in self.zs_dict['xfrac']:
-		# 	az = nearest_element_idx(self.zs_dict['xfrac'], z, both=False)
-		# 	zz = self.zs_dict['xfrac'][az]
-		# 	ff = download_simulation(self.sim_file_list_dict['xfrac'][az], self.work_dir, verbose=self.verbose)
-		# 	xf = t2c.XfracFile(ff).xi 
-		# else:
-		# 	az0, az1 = nearest_element_idx(self.zs_dict['xfrac'], z, both=True)
-		# 	zz0, zz1 = self.zs_dict['xfrac'][az0], self.zs_dict['xfrac'][az1]
-		# 	ff0 = download_simulation(self.sim_file_list_dict['xfrac'][az0], self.work_dir, verbose=self.verbose)
-		# 	ff1 = download_simulation(self.sim_file_list_dict['xfrac'][az1], self.work_dir, verbose=self.verbose)
-		# 	xf0 = t2c.XfracFile(ff0).xi 
-		# 	xf1 = t2c.XfracFile(ff1).xi 
-		# 	ff  = [ff0,ff1]
-		# 	xf  = xf0 + (xf1-xf0)*(z-zz0)/(zz1-zz0)
 		data['xfrac'] = xf 
 		data['xfrac_filename'] = ff
 
 		dn, ff = self.get_density_data_z(z)
-		# if z in self.zs_dict['dens']:
-		# 	az = nearest_element_idx(self.zs_dict['dens'], z, both=False)
-		# 	zz = self.zs_dict['dens'][az]
-		# 	ff = download_simulation(self.sim_file_list_dict['dens'][az], self.work_dir, verbose=self.verbose)
-		# 	dn = t2c.DensityFile(ff).cgs_density
-		# else:
-		# 	az0, az1 = nearest_element_idx(self.zs_dict['dens'], z, both=True)
-		# 	zz0, zz1 = self.zs_dict['dens'][az0], self.zs_dict['dens'][az1]
-		# 	ff0 = download_simulation(self.sim_file_list_dict['dens'][az0], self.work_dir, verbose=self.verbose)
-		# 	ff1 = download_simulation(self.sim_file_list_dict['dens'][az1], self.work_dir, verbose=self.verbose)
-		# 	dn0 = t2c.DensityFile(ff0).cgs_density
-		# 	dn1 = t2c.DensityFile(ff1).cgs_density
-		# 	ff  = [ff0,ff1]
-		# 	dn  = dn0 + (dn1-dn0)*(z-zz0)/(zz1-zz0)
 		data['dens'] = dn 
 		data['dens_filename'] = ff
 
