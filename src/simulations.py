@@ -4,6 +4,10 @@ from .download import *
 import tools21cm as t2c 
 
 class C2RAY:
+	'''
+	The class to retrieve C2Ray simulations.
+	
+	'''
 	def __init__(self, Nbody='CUBEP3M', work_dir='./', verbose=True):
 		self.Nbody = Nbody
 		self.verbose = verbose
