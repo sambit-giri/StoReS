@@ -10,6 +10,7 @@ Contents
    contents
    contributing
    authors
+   acknowledgement
    changelog
 
 Indices and tables

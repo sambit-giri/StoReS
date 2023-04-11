@@ -136,6 +136,23 @@ plt.show()
 
 If you find any bugs or unexpected behavior in the code, please feel free to open a [Github issue](https://github.com/sambit-giri/StoReS/issues). The issue page is also good if you seek help or have suggestions for us. 
 
-## References
+## ACKNOWLEDGEMENT
+
+We acknowledge the support provided by several high-performance computing facilities, such as
+
+* [PRACE](https://prace-ri.eu/) (Partnership for Advanced Computing in Europe) grants: 2012061089, 2014102339, 2014102281 and 2015122822,
+* [SNIC](https://www.snic.se/) (Swedish National Infrastructure for Computing) at PDC, Royal Institute of Technology, Stockholm.
+
+
+## REFERENCES
 <a id="1">[1]</a> 
 Dixon, K. L., Iliev, I. T., Mellema, G., Ahn, K., & Shapiro, P. R. (2016). The large-scale observational signatures of low-mass galaxies during reionization. Monthly Notices of the Royal Astronomical Society, 456(3), 3011-3029. [arXiv:1512.03836](https://arxiv.org/abs/1512.03836).
+
+<a id="2">[2]</a>
+Giri, S. K., D'Aloisio, A., Mellema, G., Komatsu, E., Ghara, R., & Majumdar, S. (2019). Position-dependent power spectra of the 21-cm signal from the epoch of reionization. Journal of Cosmology and Astroparticle Physics, 2019(02), 058. [arXiv:1811.09633](https://arxiv.org/abs/1811.09633)
+
+<a id="3">[3]</a>
+Giri, S. K., Mellema, G., Aldheimer, T., Dixon, K. L., & Iliev, I. T. (2019). Neutral island statistics during reionization from 21-cm tomography. Monthly Notices of the Royal Astronomical Society, 489(2), 1590-1605. [arXiv:1903.01294](https://arxiv.org/abs/1903.01294)
+
+<a is="4">[4]</a>
+Giri, S. K., & Mellema, G. (2021). Measuring the topology of reionization with Betti numbers. Monthly Notices of the Royal Astronomical Society, 505(2), 1863-1877. [arXiv2012.12908](https://arxiv.org/abs/2012.12908)
