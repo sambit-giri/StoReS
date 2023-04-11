@@ -141,7 +141,8 @@ If you find any bugs or unexpected behavior in the code, please feel free to ope
 We acknowledge the support provided by several high-performance computing facilities, such as
 
 * [PRACE](https://prace-ri.eu/) (Partnership for Advanced Computing in Europe) grants: 2012061089, 2014102339, 2014102281 and 2015122822,
-* [SNIC](https://www.snic.se/) (Swedish National Infrastructure for Computing) at PDC, Royal Institute of Technology, Stockholm.
+* [SNIC](https://www.snic.se/) (Swedish National Infrastructure for Computing) at PDC, Royal Institute of Technology, Stockholm, and
+* [Apollo](https://docs.hpc.sussex.ac.uk/apollo2/) cluster at The University of Sussex
 
 
 ## REFERENCES
