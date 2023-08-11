@@ -6,7 +6,7 @@ Contents
    :maxdepth: 2
 
    installation
-   tutorials
+   simulations
    contents
    contributing
    authors
