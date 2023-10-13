@@ -15,6 +15,7 @@ def download_simulation(link_to_file, save_dir, verbose=True, overwrite=False):
 	if not os.path.exists(local_path) or overwrite:
 		if verbose: print('Downloading simulation...')
 		wget.download(link_to_file,   save_dir)
+		print('\n')
 		if verbose: print('...done')
 	else:
 		if verbose: print('The file already exists.')

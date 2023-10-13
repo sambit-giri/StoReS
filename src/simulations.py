@@ -8,10 +8,11 @@ class C2RAY:
 	The class to retrieve C2Ray simulations.
 	
 	'''
-	def __init__(self, Nbody='CUBEP3M', work_dir='./', verbose=True):
+	def __init__(self, Nbody='CUBEP3M', work_dir='./', verbose=True, url_dict=None):
 		self.Nbody = Nbody
 		self.verbose = verbose
 		self.work_dir = work_dir 
+		self.url_dict = url_dict
 		self.sim_file_list_dict = {}
 
 	def set_nbody(self, nbody_url, info_type='dens', check_str='n_all.dat'):
@@ -19,7 +20,7 @@ class C2RAY:
 			nbody_file_list = get_file_full_list(nbody_url, ext='dat')
 			file_list = []
 			for ff in nbody_file_list: 
-				if check_str in ff:
+				if check_str in ff.lower():
 					file_list.append(ff)
 			self.sim_file_list_dict[info_type] = file_list
 		else:
@@ -29,11 +30,16 @@ class C2RAY:
 		c2ray_xfrac_file_list = get_file_full_list(c2ray_url, ext='bin')
 		file_list = []
 		for ff in c2ray_xfrac_file_list: 
-			if check_str in ff:
+			if check_str in ff.lower():
 				file_list.append(ff)
 		self.sim_file_list_dict[info_type] = file_list
+		# print(file_list)
 
-	def set_links(self, url_dict):
+	def set_links(self, url_dict=None):
+		if url_dict is None:
+			url_dict = self.url_dict
+		else:
+			self.url_dict = url_dict
 		zs_dict = {}
 		if 'dens' in url_dict.keys(): 
 			self.set_nbody(url_dict['dens'], info_type='dens', check_str='n_all.dat')
@@ -42,7 +48,7 @@ class C2RAY:
 			self.set_c2ray(url_dict['xfrac'], info_type='xfrac', check_str='xfrac3d_')
 			zs_dict['xfrac'] = np.array([ff.split('_')[-1].split('.b')[0] for ff in self.sim_file_list_dict['xfrac']]).astype(float)
 		if 'temp' in url_dict.keys(): 
-			self.set_c2ray(url_dict['temp'], info_type='temp', check_str='Temper3D_')
+			self.set_c2ray(url_dict['temp'], info_type='temp', check_str='temper3d_')
 			zs_dict['temp'] = np.array([ff.split('_')[-1].split('.b')[0] for ff in self.sim_file_list_dict['temp']]).astype(float)
 		if 'vel' in url_dict.keys():
 			self.set_nbody(url_dict['vel'], info_type='vel', check_str='v_all.dat')
