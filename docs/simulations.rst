@@ -7,4 +7,5 @@ Simulations
    :caption: Epoch of Reionization
 
    examples/244Mpc
+   examples/500Mpc
    
