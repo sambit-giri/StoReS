@@ -1,6 +1,6 @@
+cython
 numpy
 scipy
-cython
 matplotlib
 astropy
 scikit-learn
