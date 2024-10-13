@@ -25,6 +25,6 @@ python:
   install:
     - pip:
         - cython  # Install Cython first
-    - requirements: docs/requirements.txt  # Install main requirements
+    - requirements: requirements.txt  # Install main requirements
     - requirements: docs/requirements_doc.txt  # Install additional requirements for docs
 
