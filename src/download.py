@@ -11,6 +11,7 @@ def get_file_full_list(url, ext=''):
 
 
 def download_simulation(link_to_file, save_dir, verbose=True, overwrite=False):
+	if not os.path.isdir(save_dir): os.mkdir(save_dir)
 	local_path = save_dir+'/{}'.format(link_to_file.split('/')[-1])
 	if not os.path.exists(local_path) or overwrite:
 		if verbose: print('Downloading simulation...')

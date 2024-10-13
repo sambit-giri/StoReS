@@ -10,7 +10,7 @@ from setuptools import setup, find_packages
 package_link = 'https://github.com/sambit-giri/StoReS.git'
 
 setup(name='StoReS',
-      version='0.1',
+      version='0.1.1',
       description='Retrieving simulations of reionization and cosmic dawn.',
       url=package_link,
       author='Sambit Giri',
