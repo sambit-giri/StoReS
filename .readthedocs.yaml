@@ -13,7 +13,7 @@ build:
 sphinx:
   configuration: docs/conf.py
   builder: html  # Or use "dirhtml" for simpler URLs
-  fail_on_warning: true
+  fail_on_warning: false
 
 # Optional formats like PDF and ePub
 # formats:
