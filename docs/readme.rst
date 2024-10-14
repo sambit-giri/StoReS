@@ -18,6 +18,7 @@ Input
 Currently, `StoReS` can download and read the following simulation data:
 
 * |cubep3m|_: a high performance cosmological N-body code
+* |pkdgrav3|_: a high performance cosmological N-body code
 * |c2ray|_: a numerical method for calculating 3D radiative transfer and for simulating the EoR and CD
 
 
@@ -26,6 +27,9 @@ Currently, `StoReS` can download and read the following simulation data:
 
 .. |cubep3m| replace:: CUBEP\ :sup:`3`\M
 .. _cubep3m: https://github.com/jharno/cubep3m
+
+.. |pkdgrav3| replace:: pkdgrav3
+.. _pkdgrav3: https://bitbucket.org/dpotter/pkdgrav3/src/master/
 
 Outputs
 -------

@@ -40,7 +40,7 @@ For testing, one can use [pytest](https://docs.pytest.org/en/stable/) or [nosete
 
 ## USAGE
 
-Script to get C2Ray reionization simulations.
+We recommend following the jupyter notebook or tutorials provided at [this link](https://stores.readthedocs.io/en/latest/simulations.html), which is consistently updated with simulations. A few scripts to get C2Ray reionization simulations are given below:
 
 ```python
 import numpy as np 
