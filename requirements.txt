@@ -6,10 +6,3 @@ astropy
 scikit-learn
 tools21cm
 toolscosmo
-
-ipython
-nbsphinx
-numpydoc
-sphinx-rtd-theme
-sphinx_readable_theme
-sphinx>=2.3
