@@ -23,7 +23,8 @@ sphinx:
 # Specify the Python requirements needed to build the documentation
 python:
   install:
-    - pip: cython  # Install Cython first
+    - pip:
+        - cython  # Install Cython first
     - requirements: requirements.txt  # Install main requirements
-        # - docs/requirements_doc.txt  # Install additional requirements for docs
+    - requirements: docs/requirements_doc.txt
 
